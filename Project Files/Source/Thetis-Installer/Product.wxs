@@ -196,6 +196,13 @@
     </DirectoryRef>
        
     <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="fwException" Guid="*" Transitive="yes">
+      <File Id="ThetisEXE"
+	    Source="$(var.FilesPath)Thetis.exe"
+	    KeyPath="yes">
+      </File>
+      </Component>
+
       <Component Guid="*">
         <File Id="CATStructsXML"
               Source="$(var.FilesPath)CATStructs.xml"
